@@ -1,8 +1,8 @@
 "use client"
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { klasat } from '@/klasat';
 
-const addStudents = () => {
+const AddStudents = () => {
   const [formData, setFormData] = useState({
     name: '',
     last: '',
