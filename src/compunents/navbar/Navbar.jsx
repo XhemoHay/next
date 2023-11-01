@@ -5,7 +5,6 @@ import { useSession, signOut } from 'next-auth/react';
 
 const Navbar = () => {
   const { data: session } = useSession();
-console.log(session);
   const handleSignOut = () => {
     signOut();
   };

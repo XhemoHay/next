@@ -19,7 +19,8 @@ const AddStudents = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:3000/api/students', {
+      const response = await fetch('https://mf-vaspitna.vercel.app/api/students', {
+          // https://next-five-gilt.vercel.app/students
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
