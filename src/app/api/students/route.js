@@ -1,6 +1,9 @@
 import Student from "@/models/Student"
+import { getSession } from 'next-auth/react';
 import connect from "@/ulitis/db"
 import { NextResponse } from "next/server"
+// import { authOptions } from "../auth/[...nextauth]/route";
+
 
 
 export const GET = async (request) => {

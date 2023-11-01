@@ -1,6 +1,6 @@
 import { getServerSession } from 'next-auth'
 import { authOptions } from '../api/auth/[...nextauth]/route'
-import AddStudents from '@/compunents/addStudents'
+import AddStudents from '@/compunents/AddStudents'
 
 
 export default async function Admin() {

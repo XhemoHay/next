@@ -6,12 +6,12 @@ import styles from "./page.module.css"
 import { klasat } from '@/klasat';
 
 const Students = () => {
-  const { session, status } = useSession({
-    required: true,
-    onUnauthenticated() {
-      redirect('/api/auth/signin?callbackUrl=/protected')
-    }
-  });
+  // const { session, status } = useSession({
+  //   required: true,
+  //   onUnauthenticated() {
+  //     redirect('/api/auth/signin?callbackUrl=/protected')
+  //   }
+  // });
 
 
 
@@ -66,7 +66,7 @@ const Students = () => {
           <div className={styles.info1}>Info</div>
         </div>
 
-      ))):(
+      ))) : (
         <p>Select class!</p>
       )}
 

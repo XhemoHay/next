@@ -77,4 +77,4 @@ const AddStudents = () => {
   );
 };
 
-export default addStudents;
+export default AddStudents;
