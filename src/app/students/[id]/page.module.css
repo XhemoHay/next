@@ -1,0 +1,54 @@
+.contanier{
+     width: 100%;
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 20px;
+}
+.wraper{
+     width: 100%;
+}
+.wraper h1{
+     text-align: center;
+}
+.info{
+     display: flex;
+     margin-top: 25px;
+}
+
+.izjava{
+     flex: 3;
+     background-color: rgb(196, 242, 247);
+     margin-right: 20px;
+}
+
+.namaz{
+     flex: 1;
+     background-color: rgb(196, 242, 247);
+}
+
+@media(max-width: 450px) {
+     .contanier{
+          padding: 0px;
+     }
+
+     .wraper h1{
+          font-size: 22px;
+     }
+     .info{
+          display: flex;
+          flex-direction: column;
+          gap: 17px;
+          margin-top: 25px;
+     }
+     
+     .izjava{
+          flex: 3;
+          background-color: rgb(196, 242, 247);
+          margin-right: 0px;
+     }
+     
+
+
+}

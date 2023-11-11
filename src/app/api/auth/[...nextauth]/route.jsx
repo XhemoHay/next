@@ -13,24 +13,15 @@ export const authOptions = {
                     username: {
                          label: "Username",
                          type: "text",
-                         placeholder: "your username"
+                         
                     },
                     password: {
                          label: "Password",
                          type: "password",
-                         placeholder: "your password"
                     },
                },
 
                async authorize(credentials) {
-
-                    // const user = {id:"15", name:"xhemo", password:"123", role:"admin"}
-
-                    // if(credentials?.username === user.name && credentials?.password === user.password){
-                    //      return user 
-                    // }else{
-                    //      return null
-                    // }
 
                     await connect();
 
@@ -39,12 +30,12 @@ export const authOptions = {
 
                          if (user) {
                               const isPassCorrect = await bcrypt.compare(credentials.password, user.password)
-
+                              
                               if (isPassCorrect) {
                                    return {
                                         role: user.role ?? "user",
-                                        name: user.username,
-                                        type:"male"
+                                        type: user.type ?? "male",
+                                        name: user.username
                                    }
 
                               } else {
@@ -62,20 +53,37 @@ export const authOptions = {
                }
           })
      ],
+     // callbacks: {
+     //      jwt({ token, user }) {
+     //           if (user) token.role = user.role
+     //           return token
+     //      },
+     //      session({ session, token }) {
+     //           session.user.role = token.role
+     //           return session
+     //      }
+     // },
      callbacks: {
           jwt({ token, user }) {
-               if (user) token.role = user.role
-               return token
+            if (user) {
+              token.role = user.role;
+              token.type = user.type;
+            }
+            return token;
           },
           session({ session, token }) {
-               session.user.role = token.role
-               return session
+            session.user.role = token.role;
+            session.user.type = token.type; // Include the 'type' property in the session
+            return session;
           }
-     },
+        },
      secret: process.env.NEXTAUTH_SECRET,
-     debug: process.env.NODE_ENV === "development",
+     // debug: process.env.NODE_ENV === "development",
      session: { strategy: "jwt" },
      // site: process.env.NEXTAUTH_URL,
+     // pages: {
+     //      signIn: "/login"
+     // }
 }
 
 const handler = NextAuth(authOptions)

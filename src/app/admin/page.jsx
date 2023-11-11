@@ -1,6 +1,10 @@
 import { getServerSession } from 'next-auth'
 import { authOptions } from '../api/auth/[...nextauth]/route'
-import  AddStudents from '@/compunents/addStud'
+import AddStudents from '@/compunents/addStud'
+import AddUser from '@/compunents/addUser'
+import UserList from '@/compunents/userList'
+import styles from "./page.module.css"
+
 
 
 export default async function Admin() {
@@ -16,8 +20,15 @@ export default async function Admin() {
 
 
      return (
-          <div>
-          <AddStudents/>
+          <div className={styles.admin}>
+               <div >
+                    <AddStudents />
+                    <AddUser />
+               </div>
+               <div>
+                    <UserList/>
+               </div>
+
           </div>
      )
 }

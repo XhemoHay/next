@@ -6,7 +6,7 @@ const AddStudents = () => {
   const [formData, setFormData] = useState({
     name: '',
     last: '',
-    klasa: '', // Update the key to match the name attribute in the select element
+    klasa: '', 
   });
 
 
@@ -19,8 +19,8 @@ const AddStudents = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('https://mf-vaspitna.vercel.app/api/students', {
-          // https://next-five-gilt.vercel.app/students
+      const response = await fetch('/api/students', {
+      
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -17,6 +17,12 @@ const userSchema = new Schema({
           required: true,
           default:"user"
      },
+     type:{
+          type: String,
+          required: true,
+          default:"male"
+     },
+  
 }, {timestamps:true})
 
 module.exports =

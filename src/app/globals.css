@@ -8,8 +8,8 @@ html,
 body{
      max-width: 100vw;
      overflow: hidden;
-   
-     color: black;
+     background-color: rgb(236, 248, 255);
+     color: rgb(37, 79, 119);
 }
 
 a{
@@ -30,12 +30,19 @@ a{
 
 .navCon{
      height: 100px;
-     background-color: bisque;
+     background-color: rgb(196, 242, 247);
      display: flex;
      justify-content: center;
      align-items: center;
      gap: 50px;
      font-size: 24px;
+     margin-bottom: 30px;
+     box-shadow: 0px 0px 10px 0px rgba(27, 117, 133, 0.4);  
+}
+
+.navItem{
+     display: flex;
+     justify-content: center;
 }
 
 
@@ -77,5 +84,249 @@ a{
      color: white;
      font-weight: 500;
      font-size: 16px;
+}
 
+.wraperUserList{
+     margin: 20px  50px;
+     width: 400px;
+}
+.wraperUserList h2{
+     text-align: center;
+}
+
+.userList{
+     width: 100%;
+     padding: 12px 5px 6px;
+     display: flex;
+     align-items: center;
+     border-bottom: 1px solid gray;
+     font-size: 18px;
+}
+
+.userList p{
+     flex: 2;
+}
+.userList span{
+     flex: 1;
+}
+
+.izjavaCon{
+     padding: 15px;
+    
+}
+.izjavaHeader{
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     margin-bottom: 30px;
+     margin-top: 20px;
+}
+.numIzjava{
+     width: 40px;
+     height: 40px;
+     font-size: 26px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: rgb(154, 208, 212);
+     border-radius: 50%;
+}
+
+.izjavaInfo{
+     padding: 12px 5px 3px;
+     display: flex;
+     border-bottom: 1px solid rgb(154, 208, 212);
+}
+
+.izjavaInfo span{
+     flex: 1;
+     font-size: 16px;
+     margin-right: 40px;
+     font-style: italic;
+}
+
+.izjavaInfo p{
+     flex: 5;
+     font-size: 18px;
+}
+
+.salahCon{
+     padding: 15px;
+}
+
+.namazHeader{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     margin-bottom: 30px;
+     margin-top: 20px;
+}
+
+.numSalah{
+     width: 40px;
+     height: 40px;
+     font-size: 26px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color:rgb(154, 208, 212);
+     border-radius: 50%;
+}
+
+.salahInfo{
+     padding: 12px 5px 3px;
+     display: flex;
+     justify-content: space-between;
+     border-bottom: 1px solid rgb(154, 208, 212);
+}
+
+.salahInfo span{
+     font-style: italic;
+     font-size: 16px;
+}
+
+.salahInfo p{
+     font-size: 18px;
+}
+
+.modalCon{
+     width: 400px;
+     height: 400px;
+     background-color: rgb(196, 242, 247);
+     position: absolute;
+     top: 450px;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 400px;
+     height: 500px;
+     padding: 20px;
+     border: 1px solid rgb(79, 145, 150);
+     box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.6);  
+}
+
+.modalHead{
+     margin-top: 15px;
+     display: flex;
+     justify-content: space-around;
+     font-size: 20px;
+}
+
+.modalForm{
+     display: flex;
+     flex-direction: column;
+     align-items: center;   
+     margin-top: 20px;
+     
+}
+
+.modalForm input{
+      border: 1px solid rgb(71, 186, 201);
+      padding: 10px;
+      margin: 7px;
+}
+
+.modalForm select{
+     border: 1px solid rgb(71, 186, 201);
+     padding: 10px;
+     margin: 7px;
+}
+
+.modalButton{
+     margin: 20px;
+}
+.modalButton button{
+     margin: 2px 10px;
+     border: 1px solid rgb(71, 186, 201);
+     padding: 5px;
+     width: 60px;
+     background-color: rgb(43, 134, 146);
+     color: white;
+     font-size: 18px;
+}
+
+
+@media print {
+     /* Exclude top margin when printing */
+
+     .exclude-top-margin {
+          margin-top: -100px;
+        }
+
+
+
+}
+
+
+@media(max-width: 450px) {
+     .contanier{
+          min-height: 700px;
+     }
+     .navCon{
+          height: 60px;
+          background-color: rgb(196, 242, 247);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 30px;
+          font-size: 20px;
+          margin-bottom: 17px;
+     }
+
+     .izjavaCon{
+          padding: 5px;
+         
+     }
+     .izjavaHeader{
+          margin-bottom: 10px;
+          margin-top: 10px;
+     }
+
+     .izjavaHeader h2{
+          font-size: 20px;
+     }
+     .numIzjava{
+          width: 30px;
+          height: 30px;
+          font-size: 20px;
+     }
+     
+     .izjavaInfo{
+          padding: 12px 5px 3px;
+          display: flex;
+          flex-direction: column;
+     }
+     
+     .izjavaInfo span{
+          font-size: 15px;
+     }
+     
+     .izjavaInfo p{
+          font-size: 17px;
+     }
+
+     .salahCon{
+          padding: 5px;
+     }
+     
+     .namazHeader{
+          margin-bottom: 10px;
+          margin-top: 10px;
+     }
+     
+     .numSalah{
+          width: 30px;
+          height: 30px;
+          font-size: 20px;
+     }
+     
+
+     
+     .salahInfo span{
+          font-style: italic;
+          font-size: 15px;
+     }
+     
+     .salahInfo p{
+          font-size: 17px;
+     }
 }
