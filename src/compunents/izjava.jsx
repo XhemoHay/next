@@ -1,6 +1,7 @@
 "use client"
 import { useSession } from 'next-auth/react';
 import { useParams } from 'next/navigation';
+import EditNoteIcon from '@mui/icons-material/EditNote';
 
 import React, { useEffect, useState } from 'react';
 
@@ -85,7 +86,7 @@ const Izjava = () => {
           <div className='izjavaCon'>
                <div className='izjavaHeader'>
                     <h2>Problems</h2>
-                    <div onClick={() => setPisiIzjava(true)}>pisi</div>
+                    <div onClick={() => setPisiIzjava(true)}><EditNoteIcon style={{fontSize:"30px"}}/></div>
                     <div className='numIzjava'>{numOfIzjava}</div>
                </div>
 
@@ -94,12 +95,12 @@ const Izjava = () => {
                          <div className='inputIzjava'>
                               <textarea
                                    placeholder='Pisi Izjavu'
-                                   rows="4"
-                                   cols="30"
+                                   rows="5"
+                                   cols="36"
                                    spellCheck="false"
                                    onChange={(e) => setIzjavaText(e.target.value)}
                               />
-                              <div>
+                              <div className='izjavaButton'>
                                    <button onClick={saveIzjava}>Save</button>
                                    <button onClick={() => setPisiIzjava(false)}>Exit</button>
                               </div>

@@ -39,6 +39,8 @@ const Student = ({ params }) => {
 
 
 
+
+
      return (
           <div className={styles.contanier}>
                {data ? (

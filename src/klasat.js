@@ -18,4 +18,60 @@ export const klasat = [
           name: "1d",
           cat: "male",
      },
+     {
+          name: "2a",
+          cat: "male",
+     },
+     {
+          name: "2b",
+          cat: "female",
+     },
+     {
+          name: "2c",
+          cat: "female",
+     },
+     {
+          name: "2d",
+          cat: "male",
+     },
+     {
+          name: "3a",
+          cat: "male",
+     },
+     {
+          name: "3b",
+          cat: "female",
+     },
+     {
+          name: "3c",
+          cat: "female",
+     },
+     {
+          name: "3d",
+          cat: "male",
+     },
+     {
+          name: "3e",
+          cat: "male",
+     },
+     {
+          name: "4a",
+          cat: "male",
+     },
+     {
+          name: "4b",
+          cat: "female",
+     },
+     {
+          name: "4c",
+          cat: "female",
+     },
+     {
+          name: "4d",
+          cat: "male",
+     },
+     {
+          name: "4e",
+          cat: "male",
+     },
 ]

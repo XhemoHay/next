@@ -9,6 +9,12 @@
 .wraper{
      width: 100%;
 }
+.wraper button{
+     border: none; 
+     margin: 0px 10px;  
+     padding: 4px;
+     width: 60px;
+}
 .wraper h1{
      text-align: center;
 }
@@ -28,6 +34,21 @@
      background-color: rgb(196, 242, 247);
 }
 
+
+
+@media(max-width: 900px) {
+     .contanier{
+          padding: 0px;
+     }
+     .info{
+          display: flex;
+          flex-direction: column;
+          gap: 17px;
+          margin-top: 15px;
+     }
+
+}
+
 @media(max-width: 450px) {
      .contanier{
           padding: 0px;
@@ -40,7 +61,7 @@
           display: flex;
           flex-direction: column;
           gap: 17px;
-          margin-top: 25px;
+          margin-top: 15px;
      }
      
      .izjava{

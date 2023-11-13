@@ -1,3 +1,10 @@
 .admin{
      display: flex;
 }
+
+@media(max-width: 450px) {
+     .admin{
+          display: flex;
+          flex-direction: column;
+     }
+}

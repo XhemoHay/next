@@ -32,12 +32,14 @@ const Info = () => {
    
      }, [id]);
    
+
+
    
    
      return (
    
        <div className={styles.studentList}>
-   
+          
          <div>
            <select onChange={(e) => setKlasa(e.target.value)}>
              <option></option>
