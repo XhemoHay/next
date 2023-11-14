@@ -11,6 +11,10 @@ export const klasat = [
           cat: "female",
      },
      {
+          name: "1b-m",
+          cat: "male",
+     },
+     {
           name: "1c",
           cat: "female",
      },
@@ -25,6 +29,10 @@ export const klasat = [
      {
           name: "2b",
           cat: "female",
+     },
+     {
+          name: "2b-m",
+          cat: "male",
      },
      {
           name: "2c",

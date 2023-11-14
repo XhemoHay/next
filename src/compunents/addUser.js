@@ -15,8 +15,7 @@ const AddStudents = () => {
           setFormData({ ...formData, [name]: value });
      };
 
-     const handleSubmit = async (e) => {
-          e.preventDefault();
+     const handleSubmit = async () => {
 
           try {
                await fetch('/api/auth/register', {

@@ -15,9 +15,13 @@
      padding: 4px;
      width: 60px;
 }
-.wraper h1{
-     text-align: center;
+
+.title{
+display: flex;
+justify-content: center;
+gap: 30px;
 }
+
 .info{
      display: flex;
      margin-top: 25px;

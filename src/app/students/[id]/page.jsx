@@ -39,13 +39,16 @@ const Student = ({ params }) => {
 
 
 
-
-
      return (
           <div className={styles.contanier}>
                {data ? (
                     <div className={styles.wraper}>
-                         <h1>{data.name}  {data.last}</h1>
+                     <div className={styles.title}>
+                        <h1>{data.name.charAt(0).toUpperCase() + data.name.slice(1).toLowerCase()}</h1>  
+                        <h1>{data.last.charAt(0).toUpperCase() + data.last.slice(1).toLowerCase()}</h1>
+                        <h1>{data.klasa}</h1>
+                     </div>
+
                          {admin && <button onClick={() => {setOpenModal(true)}}>Edit</button>}
                          <div className={styles.info}>
                               <div className={styles.izjava}>

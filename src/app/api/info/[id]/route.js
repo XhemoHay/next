@@ -26,7 +26,11 @@ export const GET = async (request, { params }) => {
              const namaziCount = await Namaz.countDocuments({ id: student._id });
              const izjavaCount = await Izjava.countDocuments({ id: student._id });
              const totalCount = namaziCount + izjavaCount;
+
              return { ...student.toObject(), namaziCount, izjavaCount, totalCount  };
+
+
+
           })
        );
 
