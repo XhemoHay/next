@@ -62,7 +62,7 @@ const Info = () => {
          </div>
 
          <div   className={styles.list}>
-             <div className={styles.num}><b>No.</b></div>
+             <div className={styles.num}><b>#</b></div>
              <div className={styles.info}><b>Name</b></div>
              <div className={styles.info}><b>Last name</b></div>
              <div className={styles.info1}><b>Prob.</b></div>
